@@ -2,10 +2,12 @@
 codigo1 = float (input("Digite um numero: "))
 codigo2 = input ("Digite a operação(+, -, /, *): ")
 codigo3 = float (input("Digite um segundo numero: "))
+
 soma = codigo1+codigo3
 diminuicao = codigo1-codigo3
 divisao = codigo1/codigo3
 mutiplicacao = codigo1*codigo3
+
 if codigo2 =='+':
    operacao = soma
 elif codigo2 =='-':
