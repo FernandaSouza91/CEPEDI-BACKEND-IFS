@@ -1,4 +1,8 @@
-# Simule um caixa eletrônico. Peça ao usuário o valor do saque (inteiro). O programa deve informar o número de notas de R$ 100, R$ 50, R$ 20, R$ 10 necessárias para compor o valor. Suponha que o caixa sempre tem notas disponíveis e que o valor do saque é múltiplo de 10.
+# Simule um caixa eletrônico.
+#  Peça ao usuário o valor do saque (inteiro). 
+# O programa deve informar o número de notas de R$ 100, R$ 50, R$ 20, R$ 10 
+# necessárias para compor o valor. 
+# Suponha que o caixa sempre tem notas disponíveis e que o valor do saque é múltiplo de 10.
 
 valor = int(input('Digite o valor da nota  sendo múltipla de 10: R$ '))
 notade100 = valor // 100
