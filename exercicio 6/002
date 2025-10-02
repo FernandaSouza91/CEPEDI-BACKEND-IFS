@@ -1,4 +1,0 @@
-#Crie uma função chamada calcular_imc que receba dois argumentos: peso (em kg) e altura (em metros). A função deve calcular e retornar o valor do IMC. A fórmula é: IMC = peso / (altura * altura). Crie uma segunda função para realizar a classificação do IMC segundo a tabela:
-
-def calcular_imc (peso,altura)
-    peso = 
