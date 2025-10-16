@@ -8,3 +8,16 @@ Exemplos de Teste:
 ● "ABC123" -> False
 ● "1234ABC" -> False
 ● "ABCD1234" -> False'''
+
+
+import re
+
+def validar_placa(placa):
+    padrao = re.compile(r'^[A-Z]{3}[0-9]{4}$|^[A-Z]{3}[0-9][A-Z][0-9]{2}$')
+    return bool(padrao.match(placa))
+
+# Testes
+placas = ["ABC1234", "XYZ9A87", "ABC123", "1234ABC", "ABCD1234"]
+
+for p in placas:
+    print(f"{p} -> {validar_placa(p)}")

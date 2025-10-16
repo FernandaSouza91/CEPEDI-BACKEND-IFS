@@ -10,3 +10,14 @@ Saída Esperada:
 ['suporte@minhaempresa.com.br', 'vendas@minhaempresa.org',
 'meu.email@pessoal.com']
 '''
+
+
+
+import re
+
+artigo = "Entre em contato conosco em suporte@minhaempresa.com.br ou vendas@minhaempresa.org. Você pode me encontrar em meu.email@pessoal.com. Ou, se preferir, use um-email_invalido@.com ou somente texto sem email."
+
+p = re.compile(r'[a-zA-Z0-9_.+]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+')
+correspondencias = p.findall(artigo)
+for correnspondencia in correspondencias:
+    print(correnspondencia)

@@ -8,3 +8,20 @@ um exemplo de parágrafo. Fim."
 Saída Esperada:
 ['Olá', 'Como você está', 'Espero que esteja tudo bem', 'Este é um
 exemplo de parágrafo', 'Fim']'''
+
+
+import re
+
+paragrafo = "Olá! Como você está? Espero que esteja tudo bem. Este é um exemplo de parágrafo. Fim."
+
+padrao = re.split(r'[.!?]\s*', paragrafo)
+
+sentencas = []
+
+for s in padrao:
+    if s != "":
+        sentencas.append(s)
+        
+
+for s in sentencas:
+    print(s)

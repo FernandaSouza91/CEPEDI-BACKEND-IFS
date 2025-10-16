@@ -5,3 +5,12 @@ tweet = "Adorei a aula de #Python hoje! #Programacao #DataScience
 com #Regex_poderoso. Sem hashtag aqui."
 Saída Esperada:
 ['#Python', '#Programacao', '#DataScience', '#Regex_poderoso']'''
+
+
+import re 
+
+tweet = "Adorei a aula de #Python hoje! #Programacao #DataScience com #Regex_poderoso. Sem hashtag aqui."
+
+padrao = re.findall(r'#[\w]+', tweet)
+print(padrao)
+                    

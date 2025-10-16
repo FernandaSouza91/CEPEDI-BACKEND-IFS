@@ -6,3 +6,19 @@ dados_sujos = " Olá, Mundo! #@$123 Isso é um teste. Com muitos
 espaços!! "
 Saída Esperada:
 "Olá Mundo 123 Isso é um teste Com muitos espaços"'''
+
+
+import re
+
+dados_sujos = " Olá, Mundo! #@$123 Isso é um teste. Com muitos espaços!! "
+
+texto_limpo = re.sub(r'[^A-Za-zÀ-ÿ0-9 ]', '', dados_sujos)
+
+texto_limpo = re.sub(r'\s+', ' ', texto_limpo)
+
+texto_limpo = texto_limpo.strip()
+
+print(texto_limpo)
+
+
+
